@@ -13,7 +13,7 @@ Classify text files using a multinomial naive Bayes probabilistic model.
 * Optional stopwords
 * Verbose mode
 
-## Basic usage
+## API implementation
 
 Import the module:
 
@@ -49,6 +49,32 @@ Print the predictions:
 
 ```py
 >>> example.get_classifications(likelihoods, verbose=True)
+Moby Dick: Herman Melville
+The Trial: Franz Kafka
+```
+
+## CLI implementation
+
+An example command line program is provided in `example.py`:
+
+```sh
+python3 example.py --help
+usage: example.py [-h] classifications documents
+
+Determine authorship using a multinomial naive Bayes classifier.
+
+positional arguments:
+  classifications  Directory containing author writing samples.
+  documents        Directory containing documents you wish to classify.
+
+optional arguments:
+  -h, --help       show this help message and exit
+```
+
+Example:
+
+```sh
+python3 example.py example/foo/classifications/ example/foo/documents/
 Moby Dick: Herman Melville
 The Trial: Franz Kafka
 ```
