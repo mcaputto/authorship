@@ -58,7 +58,7 @@ The Trial: Franz Kafka
 An example command line program is provided in `example.py`:
 
 ```sh
-python3 example.py --help
+$ python3 example.py --help
 usage: example.py [-h] classifications documents
 
 Determine authorship using a multinomial naive Bayes classifier.
@@ -74,7 +74,7 @@ optional arguments:
 Example:
 
 ```sh
-python3 example.py example/foo/classifications/ example/foo/documents/
+$ python3 example.py example/foo/classifications/ example/foo/documents/
 Moby Dick: Herman Melville
 The Trial: Franz Kafka
 ```
